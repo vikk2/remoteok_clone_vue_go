@@ -4,7 +4,7 @@ Project structure:
 
 ```text
 .
-├── frontend/  # Vue 3 + Vite app
+├── frontend/  # Vue 2 + Vite app
 └── backend/   # Go API
 ```
 
@@ -16,20 +16,13 @@ npm install
 npm run dev
 ```
 
-Build:
-
-```sh
-cd frontend
-npm run build
-```
-
 ## Backend
 
 Run the Go server:
 
 ```sh
 cd backend
-go run .
+go run main.go
 ```
 
-The backend starts on `http://localhost:8080` and exposes `GET /health`.
+The backend starts on `http://localhost:3000` and exposes `GET /health`.
